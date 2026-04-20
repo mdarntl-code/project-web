@@ -14,14 +14,13 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a href="." aria-label="На головну сторінку">
+            <a href=".">
                 <svg class="header-logo" width="40" height="40">
                 <use href="./images/symbol-defs.svg#icon-tote"></use>
               </svg>
             </a>
 
             <nav class="header-nav-wrapper">
-
                 <ul class="header-menu-list">
                     <li><a class="header-menu-links" href="#about">Про нас</a></li>
                     <li><a class="header-menu-links" href="#advantage">Переваги</a></li>
@@ -51,7 +50,7 @@
 
 
     <main>
-        <section class="hero">
+        <section class="hero" id="about">
             <div class="hero-container">
                 <div>
                     <h2 id="hero" class="hero-title">EcoTote — Стиль, що не шкодить планеті</h1>
@@ -63,9 +62,8 @@
             </div>
         </section>
 
-
-        <div class="container">
-            <section id="advantage" class="advantages">
+        <section id="advantage" class="advantages">
+            <div class="container">
                 <h3 class="advantages-subtitle">Переваги</h3>
                 <h2 class="advantages-title">Чому обрати нас?</h2>
                 <p class="advantages-text">
@@ -103,81 +101,163 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="assortment" class="section-assortment">
+                <h2 class="assortment-header">
+                    Наші сумки
+                </h2>
+
+                <ul class="assortment-list">
+
+                    <li class="assortment-item">
+                        <img src="./images/bag1.png" alt="Зручний рюкзак для міста з відділенням для ноутбука." width="420" height="505">
+
+                        <h3 class="assortment-header-item">EcoBackpack Urban</h3>
+                        <p class="assortment-paragraph-item">Зручний рюкзак для міста з відділенням для ноутбука.</p>
+                        <p class="assortment-paragraph-price">$45</p>
+
+                        <button class="button-buy" type="button">Купити</button>
+                    </li>
+
+
+                    <li class="assortment-item">
+                        <img src="./images/bag2.png" alt="Елегантна та містка сумка для щоденного використання." width="420" height="505">
+
+                        <h3 class="assortment-header-item">EcoBag Classic</h3>
+                        <p class="assortment-paragraph-item">Елегантна та містка сумка для щоденного використання.</p>
+                        <p class="assortment-paragraph-price">$25</p>
+
+                        <button class="button-buy" type="button">Купити</button>
+                    </li>
+                    <li class="assortment-item">
+                        <img src="./images/bag3.png" alt="Компактна сумка через плече для найнеобхіднішого." width="420" height="505">
+
+                        <h3 class="assortment-header-item">EcoCrossbody Mini</h3>
+                        <p class="assortment-paragraph-item">Компактна сумка через плече для найнеобхіднішого.</p>
+                        <p class="assortment-paragraph-price">$20</p>
+
+                        <button class="button-buy" type="button">Купити</button>
+                    </li>
+
+                    <li class="assortment-item">
+                        <img src="./images/bag4.png" alt="Стильна та практична сумка для обідів." width="420" height="505">
+
+                        <h3 class="assortment-header-item">EcoLunch Bag</h3>
+                        <p class="assortment-paragraph-item">Стильна та практична сумка для обідів.</p>
+                        <p class="assortment-paragraph-price">$15</p>
+
+                        <button class="button-buy" type="button">Купити</button>
+                    </li>
+
+                    <li class="assortment-item">
+                        <img src="./images/bag5.png" alt="Велика сумка для пляжних речей з водонепроникною підкладкою." width="420" height="505">
+
+                        <h3 class="assortment-header-item">EcoBeach Tote</h3>
+                        <p class="assortment-paragraph-item">Велика сумка для пляжних речей з водонепроникною підкладкою.</p>
+                        <p class="assortment-paragraph-price">$35</p>
+
+                        <button class="button-buy" type="button">Купити</button>
+                    </li>
+
+                    <li class="assortment-item">
+                        <img src="./images/bag6.png" alt="Містка дорожня сумка з додатковими кишенями." width="420" height="505">
+
+                        <h3 class="assortment-header-item">EcoTravel Duffle</h3>
+                        <p class="assortment-paragraph-item">Містка дорожня сумка з додатковими кишенями.</p>
+                        <p class="assortment-paragraph-price">$60</p>
+
+                        <button class="button-buy" type="button">Купити</button>
+                    </li>
+                </ul>
             </section>
 
-            <div class="container">
-                <section id="assortment" class="section-assortment">
-                    <h2 class="assortment-header">
-                        Наші сумки
+            <section id="support" class="support">
+                <div class="support-container">
+                    <h2 class="support-title">
+                        Залишились питання? Зв'яжіться з нами!
                     </h2>
+                    <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
+                    <form class="support-form">
+                        <div class="support-field">
+                            <label for="user-name" class="support-label">Ім'я</label>
+                            <div class="input-wrapper">
+                                <input type="text" class="support-input" id="user-name" name="user-name" placeholder="Іван" minlength="5" maxlength="64" required />
+                            </div>
+                        </div>
+                        <div class="support-field">
+                            <label for="user-email" class="support-label">Електронна пошта</label>
+                            <div class="input-wrapper">
+                                <input type="email" class="support-input pattern-input" id="user-email" name="user-email" placeholder="ecotote@gmail.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+                                <p class="text-valid">Success!</p>
+                                <p class="text-invalid">Error text</p>
+                            </div>
+                        </div>
+                        <div class="support-field">
+                            <label for="user-message" class="support-label">Повідомлення</label>
+                            <textarea class="support-textarea" id="user-message" name="user-message" placeholder="Введіть своє повідомлення..." maxlength="500" required></textarea>
+                        </div>
+                        <button type="submit" class="support-btn">Надіслати</button>
+                    </form>
+                </div>
 
-                    <ul class="assortment-list">
+                <div class="support-img">
+                    <img src="./images/supportbag.png" alt="Виготовлення сумки" width="645" height="745">
+                </div>
+            </section>
+    </main>
 
-                        <li class="assortment-item">
-                            <img src="./images/bag1.png" alt="Зручний рюкзак для міста з відділенням для ноутбука." width="420" height="505">
+    <footer class="container footer">
+        <div class="footer-con">
+            <a href="./" class="footer-logo-link">
+                <svg class="footer-logo" width="70" height="70">
+        <use href="./images/symbol-defs.svg#icon-tote"></use>
+      </svg>
+            </a>
 
-                            <h3 class="assortment-header-item">EcoBackpack Urban</h3>
-                            <p class="assortment-paragraph-item">Зручний рюкзак для міста з відділенням для ноутбука.</p>
-                            <p class="assortment-paragraph-price">$45</p>
+            <div class="footer-nav-row">
+                <ul class="footer-list">
+                    <li><a href="#about" class="footer-link">Про нас</a></li>
+                    <li><a href="#advantage" class="footer-link">Переваги</a></li>
+                    <li><a href="#assortment" class="footer-link">Асортимент</a></li>
+                    <li><a href="#support" class="footer-link">Контакти</a></li>
+                </ul>
 
-                            <button class="button-buy" type="button">Купити</button>
-                        </li>
+                <ul class="foot-icons-desktop">
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <svg width="24" height="24"><use href="./images/symbol-defs.svg#icon-Instagram"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank">
+                            <svg width="24" height="24"><use href="./images/symbol-defs.svg#icon-Linkedin"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank">
+                            <svg width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-Youtube"></use>
+                                        </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="footer-separator"></div>
 
-                        <li class="assortment-item">
-                            <img src="./images/bag2.png" alt="Елегантна та містка сумка для щоденного використання." width="420" height="505">
-
-                            <h3 class="assortment-header-item">EcoBag Classic</h3>
-                            <p class="assortment-paragraph-item">Елегантна та містка сумка для щоденного використання.</p>
-                            <p class="assortment-paragraph-price">$25</p>
-
-                            <button class="button-buy" type="button">Купити</button>
-                        </li>
-                        <li class="assortment-item">
-                            <img src="./images/bag3.png" alt="Компактна сумка через плече для найнеобхіднішого." width="420" height="505">
-
-                            <h3 class="assortment-header-item">EcoCrossbody Mini</h3>
-                            <p class="assortment-paragraph-item">Компактна сумка через плече для найнеобхіднішого.</p>
-                            <p class="assortment-paragraph-price">$20</p>
-
-                            <button class="button-buy" type="button">Купити</button>
-                        </li>
-
-                        <li class="assortment-item">
-                            <img src="./images/bag4.png" alt="Стильна та практична сумка для обідів." width="420" height="505">
-
-                            <h3 class="assortment-header-item">EcoLunch Bag</h3>
-                            <p class="assortment-paragraph-item">Стильна та практична сумка для обідів.</p>
-                            <p class="assortment-paragraph-price">$15</p>
-
-                            <button class="button-buy" type="button">Купити</button>
-                        </li>
-
-                        <li class="assortment-item">
-                            <img src="./images/bag5.png" alt="Велика сумка для пляжних речей з водонепроникною підкладкою." width="420" height="505">
-
-                            <h3 class="assortment-header-item">EcoBeach Tote</h3>
-                            <p class="assortment-paragraph-item">Велика сумка для пляжних речей з водонепроникною підкладкою.</p>
-                            <p class="assortment-paragraph-price">$35</p>
-
-                            <button class="button-buy" type="button">Купити</button>
-                        </li>
-
-                        <li class="assortment-item">
-                            <img src="./images/bag6.png" alt="Містка дорожня сумка з додатковими кишенями." width="420" height="505">
-
-                            <h3 class="assortment-header-item">EcoTravel Duffle</h3>
-                            <p class="assortment-paragraph-item">Містка дорожня сумка з додатковими кишенями.</p>
-                            <p class="assortment-paragraph-price">$60</p>
-
-                            <button class="button-buy" type="button">Купити</button>
-                        </li>
-                    </ul>
-
-                </section>
+            <div class="footer-bottom">
+                <address class="footer-address">
+        <a href="tel:+380123456789" class="info">+38 (012) 345 67 89</a>
+        <a href="mailto:ecotote@gmail.com" class="info">ecotote@gmail.com</a>
+      </address>
+                <p class="prava">© 2026 EcoTote. Всі права захищені.</p>
             </div>
         </div>
-    </main>
+    </footer>
+    </div>
 </body>
 
 </html>
