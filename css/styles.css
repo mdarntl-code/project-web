@@ -152,7 +152,10 @@ a {
 .hero-container {
     padding: 82px 108px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 75px;
+    margin: 0 auto;
 }
 
 .hero-div {
